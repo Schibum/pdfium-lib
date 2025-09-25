@@ -624,8 +624,6 @@ def run_task_generate():
             es6_command = [
                 *base_command,
                 "-s" "EXPORT_ES6=1",
-                "-s",
-                'EXPORTED_RUNTIME_METHODS=\'["ccall", "cwrap", "wasmExports", "HEAP8", "HEAP16", "HEAP32", "HEAPU8", "HEAPU16", "HEAPU32", "HEAPF32", "HEAPF64"]\'',
                 "-o",
                 os.path.join(gen_out_dir, "pdfium.esm.js"),
             ]
